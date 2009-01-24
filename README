@@ -1,0 +1,12 @@
+Storyteller
+===========
+
+Storyteller is a markup language intended for writing fiction, and a set of tools for processing texts written in that language.
+
+This repository contains the definition of the language itself, and tools for working with it.
+
+The language definition is found in docs/storyteller.html. The definition is written in XHTML rather than Storyteller markup because Storyteller doesn't have the right capabilities for technical documentation. It's designed for writing fiction, and writing fiction is all you can really do with it.
+
+The tools are found in the tools/ directory, and are written in Perl 6. The target interpreter is Rakudo, so you will need recent checkouts of Parrot and Rakudo in order to run them. At some point this might get pegged to Rakudo versions, but not at the moment. They exist as much as a testbed of Rakudo and Perl 6 as they do for processing the markup.
+
+Tools are structured - the parser generates a syntax tree, and multiple backend modules format it into a variety of target languages - HTML, LaTeX and plain text are the initial supported formats.
